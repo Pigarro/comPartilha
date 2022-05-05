@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de performance JS</title>
+</head>
+<body>
+    <h1>Códigos para verificação de performance em javascript</h1>
+
+    <h2>Foi utilizada a mesma iteração em códigos diferentes</h2>
+    <p>Cada um dos códigos foi executado dez vezes e calculada a média entre eles</p>
+    <div>
+
+        <p>Código 1 </p>
+        <p id="average_test1"></p>
+        <code>
+            <pre>
+                let test1 = function (tentimes) {
+
+                    for (let a = 0; a < tenTimes; a++){
+                    console.time('Function #1');
+                    start = window.performance.now()
+                    
+                     
+                    for(let i = 0; i < iterations; i++ ){
+                        result =+ i;
+                     };
+                    console.timeEnd('Function #1')
+                    end = window.performance.now()
+                    console.log(timeElapsed = end - start)
+                    averageTimesArray.push(timeElapsed)
+                    
+                    }
+                    console.log(result);
+                    
+                    console.log(`the average time of execution of test1 was ${averageTest(averageTimesArray).toFixed(3)}`);
+                    
+                };
+        </pre>
+        </code>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

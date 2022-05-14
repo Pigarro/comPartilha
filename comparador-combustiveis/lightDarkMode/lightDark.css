@@ -40,9 +40,11 @@ footer.dark-mode {
 
 #mode-selector {
 	border-radius: 40px;
-	font-size: 70%;
-	height: 40px;
-	width: 100px;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-size: 55%;
+	max-height: 3.5vh;
+	max-width:max-content;
 	border: none;
 	background-color: #4e545c;
 	color: #e5e8e8;
@@ -50,6 +52,8 @@ footer.dark-mode {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	/* box-shadow:  inset 2px 1px 8px #e5e8e8; */
+
 
 }
 
@@ -70,11 +74,13 @@ footer.dark-mode {
 
 /* responsive */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 280px) {
 	#mode-selector {
-		width: 40px;
-		height: 20px;
-		font-size: 0px;
+		max-height: 2.5vh;
+		max-width: 6vh ;
+		/* max-width: 3vw; */
+		font-size: 0%;
+		background: linear-gradient(to right, #e5e8e8, rgb(0,0,0,1));
 	}
 	
 }

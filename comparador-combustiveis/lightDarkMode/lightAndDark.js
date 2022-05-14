@@ -5,27 +5,27 @@ function changeMode() {
 }
 
 function changeClasses() {
-	buttonLightDark.classList.toggle(darkModeClass);
-	// h1.classList.toggle(darkModeClass);
-	body.classList.toggle(darkModeClass);
-	// footer.classList.toggle(darkModeClass);
+  buttonLightDark.classList.toggle(darkModeClass);
+  //   h1.classList.toggle(darkModeClass);
+  body.classList.toggle(darkModeClass);
+  // footer.classList.toggle(darkModeClass);
 }
 
 function changeText() {
-	const lightMode = 'Light Mode';
-	const darkMode = 'Dark Mode';
+  const lightMode = 'Light Mode';
+  const darkMode = 'Dark Mode';
 
-	if (body.classList.contains(darkModeClass)) {
-		buttonLightDark.innerHTML = lightMode;
-		// h1.innerHTML = darkMode + ' ON';
-		// titulo.innerHTML = darkMode;
+  if (body.classList.contains(darkModeClass)) {
+    buttonLightDark.innerHTML = lightMode;
+    // h1.innerHTML = darkMode + ' ON';
+    // titulo.innerHTML = darkMode;
 
-		return;
-	}
+    return;
+  }
 
-	buttonLightDark.innerHTML = darkMode;
-	// h1.innerHTML = lightMode + ' ON';
-	// titulo.innerHTML = lightMode;
+  buttonLightDark.innerHTML = darkMode;
+  // h1.innerHTML = lightMode + ' ON';
+  // titulo.innerHTML = lightMode;
 }
 
 const darkModeClass = 'dark-mode';
